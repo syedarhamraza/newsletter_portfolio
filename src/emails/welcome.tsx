@@ -4,13 +4,15 @@ import {
   Button,
   Container,
   Head,
+  Heading,
   Hr,
   Html,
+  Img,
   Preview,
   Section,
+  Tailwind,
   Text,
 } from "@react-email/components"
-import { Img } from "@react-email/img"
 
 interface WelcomeEmailProps {
   firstName: string
@@ -20,88 +22,55 @@ export const WelcomeEmail = ({ firstName }: WelcomeEmailProps) => (
   <Html>
     <Head />
     <Preview>Welcome {firstName}!</Preview>
-    <Body style={main}>
-      <Container style={container}>
-        <Img
-          src={
-            "https://www.arhamatlas.online/_next/image?url=%2Flogo.png&w=128&q=75"
-          }
-          width="170"
-          height="170"
-          alt="Arham"
-          style={logo}
-        />
-        <Text style={paragraph}>Hi {firstName},</Text>
-        <Text style={paragraph}>
-          Welcome to My newsletter. Here, you'll find a showcase of my skills
-          and projects that demonstrate my passion for web development. I'm
-          excited to share my work with you and explore the world of web
-          development together.
-        </Text>
-        <Section style={btnContainer}>
-          <Button
-            pX={12}
-            pY={12}
-            style={button}
-            href="https://arhamatlas.online/"
-          >
-            Portfolio
-          </Button>
-        </Section>
-        <Text style={paragraph}>
-          Best,
-          <br />
-          Syed Arham Raza
-        </Text>
-        <Hr style={hr} />
-        <Text style={footer}>Pakistan</Text>
-      </Container>
-    </Body>
+    <Tailwind>
+      <Body className="bg-white my-auto mx-auto font-sans">
+        <Container className="border border-solid border-[#eaeaea] rounded my-[40px] mx-auto p-[20px] w-[465px]">
+          <Section className="mt-[32px]">
+            <Img
+              src="https://www.arhammastery.dev/android-chrome-512x512.png"
+              width="40"
+              height="37"
+              alt="Vercel"
+              className="my-0 mx-auto"
+            />
+          </Section>
+          <Heading className="text-black text-[24px] font-normal text-center p-0 my-[30px] mx-0">
+            Join <strong>Syed Arham Raza</strong> on{" "}
+            <strong>ArhamMastery!</strong>
+          </Heading>
+          <Text className="text-black text-[14px] leading-[24px]">
+            Hello {firstName},
+          </Text>
+          <Text className="text-black text-[14px] leading-[24px]">
+            Welcome to My newsletter. Here, you'll find a showcase of my skills
+            and projects that demonstrate my passion for web development. I'm
+            excited to share my work with you and explore the world of web
+            development together.{" "}
+          </Text>
+          <Section className="text-center mt-[32px] mb-[32px]">
+            <Button
+              pX={20}
+              pY={12}
+              className="bg-[#000000] rounded text-white text-[12px] font-semibold no-underline text-center"
+              href="https://arhammastery.dev"
+            >
+              Portfolio
+            </Button>
+          </Section>
+
+          <Hr className="border border-solid border-[#eaeaea] my-[26px] mx-0 w-full" />
+          <Text className="text-[#666666] text-[12px] leading-[24px]">
+            This invitation was intended for{" "}
+            <span className="text-black">{firstName}</span> from{" "}
+            <strong>ArhamMastery</strong>. If you were not expecting this
+            invitation, you can ignore this email. If you are concerned about
+            your account's safety, please reply to this email to get in touch
+            with us.
+          </Text>
+        </Container>
+      </Body>
+    </Tailwind>
   </Html>
 )
 
 export default WelcomeEmail
-
-const main = {
-  backgroundColor: "#ffffff",
-  fontFamily:
-    '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
-}
-
-const container = {
-  margin: "0 auto",
-  padding: "20px 0 48px",
-}
-
-const logo = {
-  margin: "0 auto",
-}
-
-const paragraph = {
-  fontSize: "16px",
-  lineHeight: "26px",
-}
-
-const btnContainer = {
-  textAlign: "center" as const,
-}
-
-const button = {
-  backgroundColor: "#000000",
-  borderRadius: "3px",
-  color: "#fff",
-  fontSize: "16px",
-  textDecoration: "none",
-  textAlign: "center" as const,
-  display: "block",
-}
-
-const hr = {
-  borderColor: "#cccccc",
-  margin: "20px 0",
-}
-
-const footer = {
-  color: "#8898aa",
-  fontSize: "12px",
-}

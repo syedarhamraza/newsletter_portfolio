@@ -15,7 +15,7 @@ export default function IndexPage() {
         <h1 className=" mt-11 text-3xl text-center font-bold leading-tight tracking-tighter md:text-4xl mb-5">
           Go back to main website
         </h1>
-        <Link href="https://arhamatlas.online" rel="preload">
+        <Link href="https://arhammastery.dev" rel="preload">
           <button className={buttonVariants()}>Main Website</button>
         </Link>
       </div>

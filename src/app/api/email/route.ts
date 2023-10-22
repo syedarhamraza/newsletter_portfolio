@@ -12,7 +12,7 @@ export async function POST(request: Request) {
     await resend.sendEmail({
       from: process.env.MAIL_FROM || '',
       to: email,
-      reply_to: 'contact@arhamatlas.online',
+      reply_to: process.env.REPLY_TO || '',
       subject: 'Thanks for reaching out!',
       react: WelcomeEmail({
         firstName

@@ -5,6 +5,8 @@ import { cn } from "@/src/lib/utils"
 
 import { NavItem } from "@/types/nav"
 
+import logo from "../../public/logo.png"
+
 interface MainNavProps {
   items?: NavItem[]
 }
@@ -13,12 +15,7 @@ export function MainNav({ items }: MainNavProps) {
   return (
     <div className="flex gap-6 md:gap-10">
       <Link href="/" className="flex items-center space-x-2">
-        <Image
-          width={40}
-          height={40}
-          alt="logo"
-          src="https://www.arhammastery.dev/android-chrome-512x512.png"
-        />
+        <Image width={40} height={40} alt="logo" src={logo} />
       </Link>
       {items?.length ? (
         <nav className="flex gap-6">

@@ -28,8 +28,8 @@ export const WelcomeEmail = ({ firstName }: WelcomeEmailProps) => (
           <Section className="mt-[32px]">
             <Img
               src="https://www.arhammastery.dev/android-chrome-512x512.png"
-              width="40"
-              height="37"
+              width="100"
+              height="100"
               alt="Vercel"
               className="my-0 mx-auto"
             />

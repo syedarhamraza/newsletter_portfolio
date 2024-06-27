@@ -13,7 +13,7 @@ export async function POST(request: Request) {
       from: process.env.MAIL_FROM || '',
       to: email,
       reply_to: process.env.REPLY_TO || '',
-      subject: 'Thanks for reaching out!',
+      subject: 'Thanks for Downloading!',
       react: WelcomeEmail({
         firstName
       })

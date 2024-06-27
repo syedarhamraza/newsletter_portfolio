@@ -42,19 +42,20 @@ export const WelcomeEmail = ({ firstName }: WelcomeEmailProps) => (
             Hello {firstName},
           </Text>
           <Text className="text-black text-[14px] leading-[24px]">
-            Welcome to My newsletter. Here, you'll find a showcase of my skills
-            and projects that demonstrate my passion for web development. I'm
-            excited to share my work with you and explore the world of web
-            development together.{" "}
+            Welcome to my community! I'm excited to share my latest e-book on
+            cybersecurity with you. This book is packed with essential tips and
+            insights to help you protect your digital life. Click the download
+            button below to get your free copy and start securing your digital
+            world today!{" "}
           </Text>
           <Section className="text-center mt-[32px] mb-[32px]">
             <Button
               pX={20}
               pY={12}
               className="bg-[#000000] rounded text-white text-[12px] font-semibold no-underline text-center"
-              href="https://arhammastery.dev"
+              href="https://drive.google.com/uc?export=download&id=1bMmav85tReN23f0Rhe6Mwsxt6Ijlx0uy"
             >
-              Portfolio
+              Download
             </Button>
           </Section>
 

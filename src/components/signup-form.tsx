@@ -42,11 +42,11 @@ const SignupForm = () => {
   return (
     <form className="flex flex-col gap-4" onSubmit={handleOnSubmit}>
       <Label htmlFor="firstName">Name</Label>
-      <Input id="firstName" name="firstName" required />
+      <Input id="firstName" name="firstName" placeholder="Enter your name" required />
       <Label htmlFor="email">Email</Label>
-      <Input id="email" name="email" required />
+      <Input id="email" name="email" placeholder="Enter your email" required />
       <button className={buttonVariants()} disabled={state === "loading"}>
-        Subscribe
+        Get eBook!
       </button>
     </form>
   )

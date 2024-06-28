@@ -35,8 +35,7 @@ export const WelcomeEmail = ({ firstName }: WelcomeEmailProps) => (
             />
           </Section>
           <Heading className="text-black text-[24px] font-normal text-center p-0 my-[30px] mx-0">
-            Join <strong>Syed Arham Raza</strong> on{" "}
-            <strong>ArhamMastery!</strong>
+            Welcome to <strong>ArhamMastery!</strong>
           </Heading>
           <Text className="text-black text-[14px] leading-[24px]">
             Hello {firstName},

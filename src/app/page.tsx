@@ -8,7 +8,7 @@ export default function IndexPage() {
     <section className="container grid h-full items-center gap-6 pb-8 pt-6 md:py-10">
       <div className="flex flex-col h-full max-w-[980px] items-center justify-center mx-auto">
         <h1 className="text-2xl text-center font-extrabold leading-tight tracking-tighter md:text-4xl mb-5">
-        Your Free eBook will be shared to you by your email!
+        Your eBook will be shared to you by your email!
         </h1>
         <SignupForm />
 

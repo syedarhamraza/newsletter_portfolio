@@ -30,7 +30,7 @@ export const WelcomeEmail = ({ firstName }: WelcomeEmailProps) => (
               src="https://www.arhammastery.dev/android-chrome-512x512.png"
               width="100"
               height="100"
-              alt="Vercel"
+              alt="arhammastery.dev"
               className="my-0 mx-auto"
             />
           </Section>

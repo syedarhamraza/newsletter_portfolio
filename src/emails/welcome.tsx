@@ -52,7 +52,7 @@ export const WelcomeEmail = ({ firstName }: WelcomeEmailProps) => (
               pX={20}
               pY={12}
               className="bg-[#000000] rounded text-white text-[12px] font-semibold no-underline text-center"
-              href="https://drive.google.com/uc?export=download&id=1bMmav85tReN23f0Rhe6Mwsxt6Ijlx0uy"
+              href="https://drive.google.com/uc?export=download&id=1fXTFiVpPHzVpdV99UI9HgsxG0452jZf6"
             >
               Download
             </Button>
